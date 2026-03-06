@@ -636,12 +636,18 @@ img {
 
 .usp-card:hover {
   transform: translateY(-8px);
-  box-shadow: var(--shadow-lg);
-  border-color: var(--red-200);
+  box-shadow: var(--shadow-red);
+  border-color: transparent;
+  background: var(--primary-gradient);
 }
 
 .usp-card:hover::before {
   transform: scaleX(1);
+}
+
+.usp-card:hover h4,
+.usp-card:hover p {
+  color: var(--white);
 }
 
 .usp-icon {
@@ -659,7 +665,7 @@ img {
 }
 
 .usp-card:hover .usp-icon {
-  background: var(--primary-gradient);
+  background: rgba(255,255,255,.2);
   color: var(--white);
 }
 
@@ -667,12 +673,14 @@ img {
   font-size: 1.15rem;
   font-weight: 700;
   margin-bottom: .6rem;
+  transition: var(--transition);
 }
 
 .usp-card p {
   font-size: .92rem;
   color: var(--gray-500);
   margin: 0;
+  transition: var(--transition);
 }
 
 .usp-image-wrapper {
@@ -916,9 +924,19 @@ img {
 
 .route-card:hover {
   transform: translateY(-8px);
-  box-shadow: var(--shadow-lg);
-  border-color: var(--red-200);
+  box-shadow: var(--shadow-red);
+  border-color: transparent;
+  background: var(--primary-gradient);
   color: inherit !important;
+}
+
+.route-card:hover .route-card-body h5,
+.route-card:hover .route-card-body p {
+  color: var(--white) !important;
+}
+
+.route-card:hover .route-link {
+  color: var(--white) !important;
 }
 
 .route-card-img {
@@ -1095,9 +1113,15 @@ img {
 }
 
 .feature-card:hover {
-  border-color: var(--red-200);
-  box-shadow: var(--shadow-md);
+  border-color: transparent;
+  box-shadow: var(--shadow-red);
   transform: translateY(-4px);
+  background: var(--primary-gradient);
+}
+
+.feature-card:hover h6,
+.feature-card:hover p {
+  color: var(--white) !important;
 }
 
 .feature-card .f-icon {
@@ -1115,7 +1139,7 @@ img {
 }
 
 .feature-card:hover .f-icon {
-  background: var(--primary);
+  background: rgba(255,255,255,.2);
   color: var(--white);
 }
 
@@ -1123,12 +1147,14 @@ img {
   font-size: .95rem;
   font-weight: 700;
   margin-bottom: .25rem;
+  transition: var(--transition);
 }
 
 .feature-card p {
   font-size: .82rem;
   color: var(--gray-500);
   margin: 0;
+  transition: var(--transition);
 }
 
 /* ============================================
@@ -1164,8 +1190,27 @@ img {
 
 .testimonial-card:hover {
   transform: translateY(-6px);
-  box-shadow: var(--shadow-lg);
-  border-color: var(--red-200);
+  box-shadow: var(--shadow-red);
+  border-color: transparent;
+  background: var(--primary-gradient);
+}
+
+.testimonial-card:hover .testimonial-text,
+.testimonial-card:hover .testimonial-author-name,
+.testimonial-card:hover .testimonial-author-role {
+  color: var(--white) !important;
+}
+
+.testimonial-card:hover .testimonial-stars {
+  color: var(--white);
+}
+
+.testimonial-card:hover .testimonial-avatar {
+  background: rgba(255,255,255,.25);
+}
+
+.testimonial-card:hover::before {
+  color: rgba(255,255,255,.15);
 }
 
 .testimonial-stars {
@@ -1746,7 +1791,7 @@ img {
   }
 
   .hero-section img {
-    height: 35vh;
+    height: auto;
     min-height: 250px;
   }
 
