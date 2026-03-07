@@ -144,7 +144,7 @@ document.addEventListener('DOMContentLoaded', function () {
       const waMsg = encodeURIComponent(
         'Halo Tim BST Ekspedisi,\n\nSaya ingin mendapatkan penawaran harga.\n\nNama: ' + name + '\nNo. Telp: ' + phone + '\n\nMohon informasinya, terima kasih.'
       );
-      window.open('https://api.whatsapp.com/send?phone=6281111125777&text=' + waMsg, '_blank');
+      window.open('https://api.whatsapp.com/send?phone=6281125161168&text=' + waMsg, '_blank');
       showFormAlert(quickForm, 'Terima kasih! Kami akan segera menghubungi Anda.', 'success');
       quickForm.reset();
     });
@@ -174,7 +174,7 @@ document.addEventListener('DOMContentLoaded', function () {
       if (notes) waMsg += '\nCatatan: ' + notes;
       waMsg += '\n\nMohon dibantu, terima kasih.';
 
-      window.open('https://api.whatsapp.com/send?phone=6281111125777&text=' + encodeURIComponent(waMsg), '_blank');
+      window.open('https://api.whatsapp.com/send?phone=6281125161168&text=' + encodeURIComponent(waMsg), '_blank');
       showFormAlert(footerForm, 'Terima kasih! Request Anda sudah terkirim.', 'success');
       footerForm.reset();
     });
